@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		Internet Of Things
+	</title>
+</head>
+
+<body  style=" background-image: url('iot2.jpg'); background-repeat: no-repeat; background-blend-mode: multiply; background-size: cover; font-family: verdana" >
+	<h1 align = "center" ; style = "font-family: georgia; font-size : 60px; font-style : italic;color: blue;" >
+		INTERNET OF THINGS
+	</h1>
+	<p align = "left"; style = "font-family: verdana;">
+		this tutorial will guide you through the process of implementing IOT using nodeMCU.
+	<p style = "font-family: verdana;">pre-requisites :</p> 
+<ol style="font-family: verdana; background-size: 100px;">
+	<li>Arduino IDE</li>
+	<li>nodeMCU</li>
+	<li>sajbcsaj</li>
+</ol>
+</p>
+<p align = "left"; style = "font-family: verdana;">
+You need to follow the following steps.
+</p>
+	<ol style="font-family: verdana">
+		<li>open Aruino IDE. go to files and select preferences.</li>
+		<li>paste the link given below in the additional board manager URLs and click OK.</li>
+		<a href="http://arduino.esp8266.com/stable/package_esp8266com_index.json">http://arduino.esp8266.com/stable/package_esp8266com_index.json</a>
+		<li>now go to tools > boards and select "nodeMCU 1.0".</li>
+	</ol>
+
+<p align="left"; style="font-family: verdana">Now you are all set to code nodeMCU in arduino IDE.</p> 
+
+<p align="left"; style="font-family: verdana">let's see how do we create a button which will control our application.</p> 
+
+<ol style="font-family: verdana;background-blend-mode: saturation;">
+	<li>go to adafruit.io an create an account for yourself. it is recommended that you use a single google account throughout this tutorial.</li>
+	<li>on adafruit website click on "get started for free" on the top right corner.</li>
+	<li>after creating the account on adafruit.io close that tab and open same site in the new tab. now you'll be automatically logged in.</li>
+	<li>Now go to dashboard > view all > actions > "Create a new dashboard".</li>
+	<li>give whatever name you want for eg : "myFirst IOT" and write a discription.</li>
+	<li>now click on the dashboard that you just created, in the right most part of the window there is a blue + icon. that's for creating a new block.</li>
+	<li>create a new block and add the toggle button, enter the feed name and click on create. now check the newly created feed and click next step.</li>
+	<li>on the "button on text" replece "on" with "1" and on the "button off text" replece "off" with "0".
+click on create block.</li>
+</ol>
+
+<p align = "left" ; style="font-family: verdana" >Now you are all done with adafruit.io.</p> 
+<p align = "left"; style="font-family: verdana" >now we should see how to put your google assistant to do your work.</p>
+
+<ol style="font-family: verdana">
+	<li>go to ifttt.com and create an account with the same email-id.</li>
+	<li>On the top right corner click on on your account and click on create.</li>
+	<li>now you'll be able to see the "If this then that", there click on the "+" icon and select "google assistance" > "say a simple phrase"</li>
+	<li>Type whatever you want to say to your assistance and create the trigger.</li>
+	<li>now click on the "+" icon on "that" and select adafruit > send data to adafruit io</li>
+	<li>Select feed name and data to be send should be "0" or "1" whatever you put on adafriut iot2 while creating button. after that create action.</li>
+</ol>
+<P align = "left"; style = "font-family: verdana">Now you are all set. you can ask your assistant to turn on or off the button you created on adafruit.io</P>
+<p>Now we just need that button value to be uploaded to the device that we want to control</p>
+</body>
