@@ -9,7 +9,10 @@ h1{
 	 color: blue;
 	 font-size: 60px; 
 	 background-color: white;
-	 padding: 100px 100px 100px 100px;
+	 padding-left: 100px;
+	 padding-right: auto;
+	 padding-top: 100px;
+	 padding-bottom:100px;
 }
 
 p{
@@ -26,5 +29,5 @@ ol{
 
 img{
 	width: 100%
-	
+
 }
