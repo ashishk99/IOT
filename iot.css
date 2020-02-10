@@ -10,7 +10,7 @@ h1{
 	 color: blue;
 	 font-size: 60px; 
 	 background-color: white;
-	 padding-left: 100px;
+	 padding-left: auto;
 	 padding-right: auto;
 	 padding-top: 100px;
 	 padding-bottom:100px;
@@ -29,11 +29,6 @@ ol{
 }
 
 img{
-	width: 100%
+	width: 50%
 
-}
-
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
 }
