@@ -24,12 +24,30 @@ p{
 	font-size: 20px;
 }
 ol{
-	font-size: 15px;
+	font-size: 17px;
 	font-family: verdana;
 	color: green;
-}
+}	
 
 img{
-	width: 50%
-
+	width: 20%;
 }
+
+.menu_bar{
+	background-color: white;
+	font-size : 40px;
+	font-family: verdana;
+	overflow: hidden;
+	text-align: center;
+}
+
+.menu_bar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
