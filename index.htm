@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <link rel="stylesheet" type="text/css" href="iot.css">
-<head>
+<head id="home">
 	<title>
 		Internet Of Things
 	</title>
@@ -9,11 +9,21 @@
 
 <body>
 	<h1>
-		INTERNET OF THINGS
 		<img src="iot2.JPG">
+		INTERNET OF THINGS
 	</h1>
-	<p>
-		this tutorial will guide you through the process of implementing IOT using nodeMCU.
+	<div class="menu_bar">
+		<a href="index.htm">Home</a>
+		<a href="#introduction">Introduction</a>
+		<a href="#nodemcu">nodeMcu config</a>
+		<a href="#adafruit">Adafruit.io</a>
+		<a href="#ifttt">ifttt</a>
+	</div>
+	<p id="introduction">
+		Hello folks, if you are on this page than you already know the importance on IOT in todays worlds. Many enthisiasits already know what IOT is but what they dont know is the ways to immplement it. so I am gonna tell you one of the simplest way to implement IOT using your voice command.
+		so in this tutorial we will be working on to control your hardware with your google assistant.
+		so lets get started.
+	</p>
 	<p>pre-requisites :</p> 
 <ol>
 	<li>Arduino IDE</li>
@@ -21,7 +31,7 @@
 	<li>sajbcsaj</li>
 </ol>
 </p>
-<p>
+<p id="nodemcu">
 You need to follow the following steps.
 </p>
 	<ol>
@@ -30,10 +40,9 @@ You need to follow the following steps.
 		<a href="http://arduino.esp8266.com/stable/package_esp8266com_index.json">http://arduino.esp8266.com/stable/package_esp8266com_index.json</a>
 		<li>now go to tools > boards and select "nodeMCU 1.0".</li>
 	</ol>
-
 <p>Now you are all set to code nodeMCU in arduino IDE.</p> 
 
-<p>let's see how do we create a button which will control our application.</p> 
+<p id="adafruit">let's see how do we create a button which will control our application.</p> 
 
 <ol>
 	<li>go to adafruit.io an create an account for yourself. it is recommended that you use a single google account throughout this tutorial.</li>
@@ -50,7 +59,7 @@ click on create block.</li>
 <p>Now you are all done with adafruit.io.</p> 
 <p>now we should see how to put your google assistant to do your work.</p>
 
-<ol>
+<ol id="ifttt">
 	<li>go to ifttt.com and create an account with the same email-id.</li>
 	<li>On the top right corner click on on your account and click on create.</li>
 	<li>now you'll be able to see the "If this then that", there click on the "+" icon and select "google assistance" > "say a simple phrase"</li>
